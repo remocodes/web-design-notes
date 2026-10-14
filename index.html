@@ -1,0 +1,489 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مذكرة تأسيسية في تصميم مواقع الويب</title>
+    <link rel="stylesheet" href="style.css">
+
+        
+</head>
+
+<body id="top">
+
+    <header>
+        <h1>مذكرة تأسيسية في تصميم مواقع الويب</h1>
+        <p>أساسيات HTML وCSS للمبتدئين</p>
+        <div class="author">إعداد: Reem Ahmed</div>
+    </header>
+
+    <nav>
+        <a href="#intro">مقدمة</a>
+        <a href="#html">أساسيات HTML</a>
+        <a href="#css">أساسيات CSS</a>
+        <a href="#project">تطبيق عملي</a>
+        <a href="#questions">أسئلة للمراجعة</a>
+    </nav>
+
+    <main>
+
+        <!-- مقدمة المذكرة -->
+        <section id="intro">
+            <h2>مقدمة</h2>
+
+            <p>
+                تصميم مواقع الويب بيعتمد على مجموعة من اللغات،
+                وكل لغة ليها وظيفة مختلفة في بناء الموقع.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>HTML:</strong>
+                    بتحدد محتوى الصفحة وعناصرها الأساسية.
+                </li>
+                <li>
+                    <strong>CSS:</strong>
+                    بتحدد شكل العناصر وتنسيقها والألوان والخلفيات.
+                </li>
+                <li>
+                    <strong>JavaScript:</strong>
+                    بتضيف التفاعل والحركة والوظائف للصفحة.
+                </li>
+            </ul>
+
+            <div class="note">
+                <strong>معلومة مهمة:</strong>
+                HTML مسؤولة عن هيكل الصفحة، وCSS مسؤولة عن مظهرها.
+            </div>
+        </section>
+
+        <!-- الفصل الأول -->
+        <section id="html">
+            <h2>الفصل الأول: أساسيات HTML</h2>
+
+            <h3>1. الهيكل الأساسي لصفحة HTML</h3>
+
+            <p>
+                كل صفحة ويب بتحتاج هيكل أساسي بنكتب داخله
+                المحتوى اللي هيظهر للمستخدم.
+            </p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;موقعي الأول&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;أهلًا بكم&lt;/h1&gt;
+    &lt;p&gt;دي أول صفحة ويب ليا.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <ul>
+                <li><code class="inline-code">&lt;html&gt;</code>: العنصر الرئيسي للصفحة.</li>
+                <li><code class="inline-code">&lt;head&gt;</code>: معلومات وإعدادات الصفحة.</li>
+                <li><code class="inline-code">&lt;title&gt;</code>: عنوان الصفحة في تبويب المتصفح.</li>
+                <li><code class="inline-code">&lt;body&gt;</code>: المحتوى الظاهر للمستخدم.</li>
+                <li><code class="inline-code">lang="en"</code>: يستخدم لتحديد اللغة لمحتوي صفحة الويب,وفي هذه الحالة يعني ان الصفحة هي انجليزي.</li>
+            </ul>
+
+            <h3>2. العناوين Headings</h3>
+
+            <p>بنستخدم العناوين لتنظيم محتوى الصفحة من العنوان الرئيسي للعناوين الفرعية.</p>
+
+            <pre><code>&lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+&lt;h2&gt;عنوان فرعي&lt;/h2&gt;
+&lt;h3&gt;عنوان أصغر&lt;/h3&gt;</code></pre>
+
+            <p>
+                عناصر العناوين بتبدأ من
+                <code class="inline-code">&lt;h1&gt;</code>
+                لحد
+                <code class="inline-code">&lt;h6&gt;</code>.
+            </p>
+
+            <h3>3. الفقرات Paragraphs</h3>
+
+            <pre><code>&lt;p&gt;أهلًا بكم في موقع المعهد.&lt;/p&gt;</code></pre>
+
+            <p>
+                العنصر <code class="inline-code">&lt;p&gt;</code>
+                بيستخدم لكتابة فقرة نصية.
+            </p>
+
+            <h3>4. تنسيق النصوص</h3>
+
+            <pre><code>&lt;strong&gt;نص مهم&lt;/strong&gt;
+&lt;em&gt;نص للتأكيد&lt;/em&gt;
+&lt;mark&gt;نص مميز&lt;/mark&gt;</code></pre>
+
+            <ul>
+                <li><strong>strong:</strong> لتوضيح أهمية النص.</li>
+                <li><em>em:</em> للتأكيد على النص.</li>
+                <li><mark>mark:</mark> لتمييز النص.</li>
+            </ul>
+
+            <h3>5. الروابط Links</h3>
+
+            <pre><code>&lt;a href="https://www.google.com"&gt;
+    افتح جوجل
+&lt;/a&gt;</code></pre>
+ <p>
+                العنصر <code class="inline-code">&lt;a&gt;</code>
+                بيعمل رابط، والخاصية
+                <code class="inline-code">href</code>
+                بتحدد المكان اللي الرابط هيفتحه.
+            </p>
+
+            <h3>6. إضافة الصور Images</h3>
+
+            <pre><code>&lt;img src="logo.png"
+     alt="شعار المعهد"
+     width="200"&gt;</code></pre>
+
+            <ul>
+                <li><strong>src:</strong> مسار الصورة.</li>
+                <li><strong>alt:</strong> وصف بديل للصورة.</li>
+                <li><strong>width:</strong> عرض الصورة.</li>
+            </ul>
+
+            <div class="note">
+                لازم تكون الصورة موجودة في المسار المكتوب داخل
+                <code class="inline-code">src</code>.
+            </div>
+
+            <h3>7. القوائم Lists</h3>
+
+            <p>قائمة غير مرتبة:</p>
+
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;تكنولوجيا المعلومات&lt;/li&gt;
+    &lt;li&gt;نظم المعلومات&lt;/li&gt;
+    &lt;li&gt;علوم الحاسب&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <p>قائمة مرتبة بالأرقام:</p>
+
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;تعلم HTML&lt;/li&gt;
+    &lt;li&gt;تعلم CSS&lt;/li&gt;
+    &lt;li&gt;تعلم JavaScript&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <p>
+                <code class="inline-code">&lt;ul&gt;</code>
+                قائمة غير مرتبة،
+                و<code class="inline-code">&lt;ol&gt;</code>
+                قائمة مرتبة،
+                و<code class="inline-code">&lt;li&gt;</code>
+                عنصر داخل القائمة.
+            </p>
+
+            <h3>8. إنشاء زر Button</h3>
+
+            <pre><code>&lt;button&gt;اعرف المزيد&lt;/button&gt;</code></pre>
+
+            <p>
+                بيعمل زرًا في الصفحة، لكن إضافة وظيفة للزر
+                ممكن تحتاج JavaScript.
+            </p>
+
+            <h3>9. إنشاء جدول Table</h3>
+
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;القسم&lt;/th&gt;
+        &lt;th&gt;عدد الطلاب&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;تكنولوجيا المعلومات&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <ul>
+                <li><strong>table:</strong> إنشاء الجدول.</li>
+                <li><strong>tr:</strong> إنشاء صف.</li>
+                <li><strong>th:</strong> خلية عنوان.</li>
+                <li><strong>td:</strong> خلية بيانات.</li>
+            </ul>
+
+            <h3>10. نموذج إدخال البيانات Form</h3>
+
+            <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;الاسم:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;إرسال&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <p>
+                النموذج بيسمح للمستخدم بإدخال بيانات.
+                أما حفظها في قاعدة بيانات، فبيحتاج برمجة إضافية
+                مثل PHP وقاعدة بيانات.
+            </p>
+        </section>
+
+        <!-- الفصل الثاني -->
+        <section id="css">
+            <h2>الفصل الثاني: أساسيات CSS</h2>
+
+            <h3>1. ربط CSS بصفحة HTML</h3>
+
+            <p>
+                بنكتب السطر التالي داخل عنصر
+                <code class="inline-code">&lt;head&gt;</code>
+                في ملف HTML:
+            </p>
+
+            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+            <p>
+                السطر ده بيربط صفحة HTML بملف التنسيق
+                اللي اسمه <code class="inline-code">style.css</code> وهو مهم جداا.
+            </p>
+
+            <h3>2. شكل كود CSS</h3>
+
+            <pre><code>p {
+    color: blue;
+    font-size: 18px;
+}</code></pre>
+
+            <ul>
+                <li><strong>p:</strong> العنصر اللي هيتم استدعاءة من الHTML.</li>
+                <li><strong>color:</strong> خاصية لون النص.</li>
+                <li><strong>blue:</strong> قيمة اللون.</li>
+                <li><strong>font-size:</strong> خاصية حجم الخط.</li>
+                <li><strong>18px:</strong> قيمة حجم الخط.</li>
+            </ul>
+
+            <h3>3. تغيير لون النص</h3>
+
+            <pre><code>h1 {
+    color: purple;
+}</code></pre>
+
+            <p>الكود بيخلي لون العنوان بنفسجي.</p>
+ <h3>4. تغيير لون الخلفية</h3>
+
+            <pre><code>body {
+    background-color: #F5F0FF;
+}</code></pre>
+
+            <p>الكود بيغير لون خلفية الصفحة كلها.</p>
+
+            <h3>5. تغيير حجم الخط ونوعه</h3>
+
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+}</code></pre>
+
+            <p>
+                <code class="inline-code">font-family</code>
+                بتحدد نوع الخط،
+                و<code class="inline-code">font-size</code>
+                بتحدد حجمه.
+            </p>
+
+            <h3>6. محاذاة النص</h3>
+
+            <pre><code>h1 {
+    text-align: center;
+}</code></pre>
+
+            <p>القيمة center بتخلي النص في المنتصف.</p>
+
+            <h3>7. المسافات الداخلية والخارجية</h3>
+
+            <pre><code>.card {
+    padding: 20px;
+    margin: 20px;
+}</code></pre>
+
+            <ul>
+                <li><strong>padding:</strong> مساحة داخل العنصر بين المحتوى وحدوده.</li>
+                <li><strong>margin:</strong> مساحة خارج العنصر بينه وبين العناصر الأخرى.</li>
+            </ul>
+
+            <h3>8. الحدود والزوايا</h3>
+
+            <pre><code>.card {
+    border: 1px solid #CCCCCC;
+    border-radius: 12px;
+}</code></pre>
+
+            <p>
+                <code class="inline-code">border</code>
+                بتضيف حدودًا للعنصر،
+                و<code class="inline-code">border-radius</code>
+                بتخلي زواياه دائرية.
+            </p>
+
+            <h3>9. استخدام Class</h3>
+
+            <p>في HTML:</p>
+
+            <pre><code>&lt;p class="special"&gt;أهلًا بكم&lt;/p&gt;</code></pre>
+
+            <p>في CSS:</p>
+
+            <pre><code>.special {
+    color: purple;
+    font-weight: bold;
+}</code></pre>
+
+            <p>
+                بنستخدم النقطة قبل اسم
+                <code class="inline-code">class</code>
+                في CSS، عشان ننسق العناصر اللي تحمل الاسم ده.
+            </p>
+
+            <h3>10. استخدام ID</h3>
+
+            <pre><code>&lt;h1 id="main-title"&gt;معهد التكنولوجيا&lt;/h1&gt;</code></pre>
+
+            <pre><code>#main-title {
+    color: darkblue;
+}</code></pre>
+
+            <p>
+                بنستخدم علامة # قبل اسم
+                <code class="inline-code">id</code>
+                في CSS. والأفضل إن كل ID يكون فريدًا داخل الصفحة.
+            </p>
+
+            <h3>11. ترتيب العناصر باستخدام Flexbox</h3>
+
+            <pre><code>.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}</code></pre>
+
+            <ul>
+                <li><strong>display: flex:</strong> لترتيب العناصر باستخدام Flexbox.</li>
+                <li><strong>gap:</strong> لتحديد المسافة بين العناصر.</li>
+                <li><strong>justify-content:</strong> للتحكم في توزيع العناصر على المحور الرئيسي.</li>
+            </ul>
+
+            <h3>12. تغيير شكل الزر عند المرور عليه</h3>
+
+            <pre><code>button:hover {
+    background-color: darkblue;
+}</code></pre>
+
+            <p>
+                الكود بيغير لون خلفية الزر لما مؤشر الفأرة يمر فوقه.
+            </p>
+        </section>
+
+        <!-- التطبيق العملي -->
+        <section id="project">
+            <h2>الفصل الثالث: تطبيق عملي</h2>
+
+            <p>
+                دلوقتي هنجمع HTML وCSS في مثال بسيط لموقع معهد تكنولوجي.
+            </p>
+
+            <h3>كود HTML</h3>
+
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;معهد التكنولوجيا&lt;/h1&gt;
+    &lt;p&gt;نحو مستقبل رقمي أفضل&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;h2&gt;أهلًا بكم في موقع المعهد&lt;/h2&gt;
+    &lt;p&gt;اكتشفوا الأقسام المتاحة لدينا.&lt;/p&gt;
+
+    &lt;div class="card"&gt;
+        &lt;h3&gt;تكنولوجيا المعلومات&lt;/h3&gt;
+        &lt;p&gt;تعلم البرمجة وتطوير المواقع.&lt;/p&gt;
+        &lt;button&gt;اعرف المزيد&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/main&gt;</code></pre>
+
+            <h3>كود CSS</h3>
+
+            <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F0FF;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #5B2C83;
+    color: white;
+    padding: 30px;
+}
+
+main {
+    padding: 30px 20px;
+}
+ .card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+button {
+    background-color: #5B2C83;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}</code></pre>
+
+            <div class="note">
+                <strong>طريقة التشغيل:</strong>
+                احفظي أكواد HTML في ملف index.html،
+                وأكواد CSS في ملف style.css داخل نفس المجلد.
+                افتحي index.html في المتصفح لمشاهدة النتيجة.
+            </div>
+        </section>
+
+        <!-- المراجعة -->
+        <section id="questions">
+            <h2>الفصل الرابع: أسئلة للمراجعة</h2>
+
+            <ol>
+                <li>ما وظيفة HTML؟</li>
+                <li>ما وظيفة CSS؟</li>
+                <li>ما الفرق بين h1 وp؟</li>
+                <li>ما وظيفة الخاصية href؟</li>
+                <li>ما الفرق بين padding وmargin؟</li>
+                <li>ما الفرق بين class وid؟</li>
+                <li>ما وظيفة background-color؟</li>
+                <li>لماذا نربط ملف CSS بملف HTML؟</li>
+                <li>ما وظيفة display: flex؟</li>
+                <li>ما خطوات تشغيل صفحة الويب في المتصفح؟</li>
+            </ol>
+
+            <div class="note">
+                نصيحة: جربوا الأكواد بأنفسكم، وغيّروا الألوان
+                والأحجام، عشان تفهموا كل خاصية بتعمل إيه.
+            </div>
+
+            <p style="text-align: center; margin-top: 25px;">
+                <a class="top-link" href="#top">العودة إلى أعلى الصفحة ↑</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>مذكرة أساسيات HTML وCSS للمبتدئين</p>
+        <p>إعداد: Reem Ahmed | بالتوفيق في مشروع التخرج ❤️</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* التنسيق العام */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #FCFAF6;
+    color: #49372F;
+    line-height: 1.9;
+}
+
+/* رأس الصفحة */
+header {
+    background: #3D2823;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+header p {
+    color: #E9DCD2;
+    font-size: 17px;
+}
+
+.author {
+    display: inline-block;
+    background-color: #9A7B6C;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 12px;
+    border-radius: 12px;
+    border: 1px solid #EEE5DB;
+    box-shadow: 0 2px 8px #49372F0A;
+}
+
+nav a {
+    color: #704C3B;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #B17A50;
+}
+
+/* المحتوى الرئيسي */
+main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    border: 1px solid #EDE5DC;
+    box-shadow: 0 3px 12px #49372F08;
+}
+
+/* العناوين */
+h2 {
+    color: #4B3329;
+    border-right: 5px solid #9B7660;
+    padding-right: 12px;
+    font-size: 23px;
+}
+
+h3 {
+    color: #79553F;
+    margin-top: 25px;
+}
+
+/* الملاحظات */
+.note {
+    background-color: #F5EDE3;
+    color: #50392C;
+    border-right: 4px solid #B18A6B;
+    padding: 12px 18px;
+    border-radius: 7px;
+}
+
+/* مربعات الأكواد */
+pre {
+    direction: ltr;
+    text-align: left;
+    background-color: #30231F;
+    color: #F3E5D5;
+    padding: 18px;
+    border-radius: 9px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.7;
+    border: 1px solid #4B3930;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+.inline-code {
+    direction: ltr;
+    display: inline-block;
+    background-color: #F0E5D8;
+    color: #70472F;
+    padding: 1px 7px;
+    border-radius: 4px;
+}
+
+/* الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #E6D9CB;
+    padding: 10px;
+    text-align: right;
+}
+
+th {
+    background-color: #624333;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #FBF6EF;
+}
+
+/* زر العودة للأعلى */
+.top-link {
+    display: inline-block;
+    background-color: #624333;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.top-link:hover {
+    background-color: #916747;
+}
+
+/* الفوتر */
+footer {
+    background-color: #3D2823;
+    color: #F8EDE2;
+    text-align: center;
+    padding: 22px;
+}
+
+/* مناسب للموبايل */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    pre {
+        font-size: 12px;
+    }
+}
